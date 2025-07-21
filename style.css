@@ -21,7 +21,7 @@ section {
 ====================== */
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  background: linear-gradient(135deg, #1e8a81, #3bf6ed);
   color: white;
 }
 
@@ -93,7 +93,7 @@ input:focus, textarea:focus {
 }
 
 .chatbot-header {
-  background: #1e3a8a;
+  background: #298176;
   color: #fff;
   padding: 10px;
   font-weight: bold;
@@ -176,5 +176,52 @@ footer .bi {
 
 [data-bs-theme="dark"] .chatbot-header {
   background-color: #3b82f6;
+}
+
+/* =====================
+   Mobile Responsive (max-width: 768px)
+====================== */
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .chatbot {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+  }
+
+  .chatbot-body {
+    max-height: 200px;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 10px;
+    text-align: center;
+  }
 }
 
